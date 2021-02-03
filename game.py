@@ -12,35 +12,40 @@ print("-------------------")
 
 user_choice = input("Please choose either 'rock', 'paper', or 'scissors': ")
 
-if user_choice == "rock" or user_choice == "paper" or user_choice == "scissors":
+
+#validate the user selection
+
+rbs = ["rock", "paper", "scissors"]
+
+if user_choice in rbs:
     print("You chose:", user_choice)
 
 else:
-    print("You entered:", user_choice, ". Please enter a valid input!")
+    print("Please choose a valid option and try again.")
     exit()
-
 
 # simulating a computer input
 
 import random
 
-arr = ["rock", "paper", "scissors"]
-
-random.shuffle(arr)
-arr
-
-computer_choice = random.choice(arr)
+computer_choice = random.choice(rbs)
 
 print(f"The computer chose: {computer_choice}")
 
-# determining who won
-
-if user_choice == "rock":
-    if computer_choice == "rock":
-        print("You ")
-
 
 print("-------------------")
-print("Oh, the computer won. It's ok.")
+
+# determining who won
+
+result = (user_choice, computer_choice)
+wins = [("rock", "scissors"), ("scissors", "paper"), ("paper", "rock")]
+
+if result in wins:
+    print("Yay, you won! Congratulations.")
+elif user_choice == computer_choice:
+    print("It's a tie!")
+else:
+    print("Oh, the computer won.")
+
 print("-------------------")
 print("Thanks for playing. Please play again!")

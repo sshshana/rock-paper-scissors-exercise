@@ -2,8 +2,6 @@
 
 print("Rock, Paper, Scissors, Shoot!")
 
-
-
 print("-------------------")
 print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
 print("-------------------")

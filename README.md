@@ -25,11 +25,19 @@ conda create -n my-game-env python=3.8
 conda activate my-game-env
 ```
 
+From inside the virtual environment, install package dependencies:
+
+```sh
+pip install -r requirements.txt
+```
+
+> NOTE: if this command throws an error like "Could not open requirements file: [Errno 2] No such file or directory", make sure you are running it from the repository's root directory, where the requirements.txt file exists (see the initial `cd` step above)
+
 ## Setup
 
-In in the root directory of your local repository, create a new file called ".env", and update the contents of the ".env" file to specify your desired username:
+In in the root directory of your local repository, create a new file called ".env", and update the contents of the ".env" file to specify your desired player name. Please see the exmaple below:
 
-    USER_NAME="John Snow"
+    PLAYER_NAME="John Snow"
 
 > NOTE: If you don't customize your user name, it will be set as "Playser One" by default.
 

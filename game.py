@@ -49,6 +49,7 @@ print(f"The computer chose: {computer_choice}")
 print("-------------------")
 
 # determining who won
+# adapted from solution shared by Kevin Pinkerton in slack
 
 result = (user_choice, computer_choice)
 wins = [("rock", "scissors"), ("scissors", "paper"), ("paper", "rock")]

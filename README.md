@@ -10,7 +10,7 @@ With this application, you can play a rock-paper-scissors game with a computer.
 
 ## Installation
 
-Fork this [remote repository](https://github.com/sshshana/rock-paper-scissors-exercise) under your own control, then "clone" or download your remote copy onto your local computer. Choose a familiar download location like the Desktop.
+Fork this [remote repository](https://github.com/sshshana/rock-paper-scissors-exercise) under your own control, then "clone" or download your remote copy onto your local computer. Choose a familiar download location such as Desktop.
 
 Then navigate there from the command line (subsequent commands assume you downloaded the remote copy onto the Desktop):
 
@@ -43,7 +43,7 @@ In in the root directory of your local repository, create a new file called ".en
 
 ## Usage
 
-Run the game script:
+Run the game script and follow the instructions the system prompts:
 
 ```py
 python game.py
